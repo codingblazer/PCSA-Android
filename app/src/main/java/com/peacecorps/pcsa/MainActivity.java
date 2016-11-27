@@ -91,21 +91,20 @@ public class MainActivity extends AppCompatActivity {
         prepareListData();
         listAdapter = new NavDrawerListAdapter(this, listDataHeader, listDataChild);
         expListView.setAdapter(listAdapter);
-        expListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
+        expListView.setOnGroupClickListener(new ExpandableListView.OnGroupClickListener() {
             @Override
-            public void onGroupExpand(int groupPosition) {
-                switch (groupPosition)
-                {
+            public boolean onGroupClick(ExpandableListView parent, View v, int groupPosition, long id) {
+                switch (groupPosition) {
                     case 0:
                         //Swapping ContactPostStaff into the fragment container dynamically
                         Fragment contactPostStaffFragment = new ContactPostStaff();
-                        MainActivity.swapFragmentIn(MainActivity.this,contactPostStaffFragment,ContactPostStaff.TAG,true);
+                        MainActivity.swapFragmentIn(MainActivity.this, contactPostStaffFragment, ContactPostStaff.TAG, true);
                         mDrawer.closeDrawer(GravityCompat.START);
                         break;
                     case 1:
                         //Swapping CircleOfTrustFragment into the container
                         CircleOfTrustFragment circleOfTrustFragment = new CircleOfTrustFragment();
-                        MainActivity.swapFragmentIn(MainActivity.this,circleOfTrustFragment,CircleOfTrustFragment.TAG,true);
+                        MainActivity.swapFragmentIn(MainActivity.this, circleOfTrustFragment, CircleOfTrustFragment.TAG, true);
                         mDrawer.closeDrawer(GravityCompat.START);
                         break;
                     case 6:
@@ -114,8 +113,9 @@ public class MainActivity extends AppCompatActivity {
                         mDrawer.closeDrawer(GravityCompat.START);
                         break;
                     case 7:
-                        Toast.makeText(MainActivity.this,getString(R.string.change_name),Toast.LENGTH_LONG).show();
+                        Toast.makeText(MainActivity.this, getString(R.string.change_name), Toast.LENGTH_LONG).show();
                 }
+                        return false;
             }
         });
 
