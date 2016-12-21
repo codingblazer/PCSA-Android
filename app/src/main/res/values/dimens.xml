@@ -130,5 +130,6 @@
     <dimen name="textsize_links">18sp</dimen>
 
     <dimen name="circle_of_trust_paddingleft_title">-65dp</dimen>
+    <dimen name="padding_tactics_land">0dp</dimen>
 
 </resources>

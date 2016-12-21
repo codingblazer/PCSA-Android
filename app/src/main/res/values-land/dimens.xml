@@ -4,4 +4,5 @@
 
     <dimen name="circle_of_trust_margin_top">2dp</dimen>
     <dimen name="button_width_poststaff">600dp</dimen>
+    <dimen name="padding_tactics_land">80dp</dimen>
 </resources>
