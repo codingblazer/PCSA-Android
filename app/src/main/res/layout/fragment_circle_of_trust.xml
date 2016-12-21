@@ -32,7 +32,7 @@
             android:textSize="@dimen/sub_title_font"
             android:textStyle="bold"
             android:text="@string/circle_subtitle"
-            android:paddingLeft="@dimen/circle_of_trust_paddingLeft_title"
+            android:paddingLeft="@dimen/circle_of_trust_paddingleft_title"
             />
         </LinearLayout>
         <LinearLayout
@@ -50,7 +50,7 @@
                     android:layout_width="@dimen/circle_of_trust_width"
                     android:layout_height="@dimen/circle_of_trust_height"
                     android:src="@drawable/ic_comrade"
-                    android:layout_marginTop="@dimen/circle_of_trust_width_25"
+                    android:layout_marginTop="@dimen/circle_of_trust_margin_top"
                     android:layout_marginLeft="@dimen/circle_of_trust_marginLeft_com1"
                     app:border="true"
                     android:layout_gravity="center_horizontal"
@@ -80,7 +80,7 @@
                     android:layout_width="@dimen/circle_of_trust_width"
                     android:layout_height="@dimen/circle_of_trust_height"
                     android:src="@drawable/ic_comrade"
-                    android:layout_marginTop="@dimen/circle_of_trust_marginTop"
+                    android:layout_marginTop="@dimen/circle_of_trust_margin_top"
                     app:border="true"
                     android:layout_gravity="center_horizontal"
                     app:border_color="@color/photo_border"
@@ -115,7 +115,7 @@
                     android:layout_width="@dimen/circle_of_trust_width"
                     android:layout_height="@dimen/circle_of_trust_height"
                     android:src="@drawable/ic_comrade"
-                    android:layout_marginTop="@dimen/circle_of_trust_marginTop"
+                    android:layout_marginTop="@dimen/circle_of_trust_margin_top"
                     app:border="true"
                     android:layout_gravity="center_horizontal"
                     app:border_color="@color/photo_border"
