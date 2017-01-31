@@ -5,4 +5,5 @@
     <dimen name="cirle_imageview_width">166dp</dimen>
     <dimen name="circle_imageview_height">166dp</dimen>
     <dimen name="menu_icon_width">133dp</dimen>
+    <dimen name="viewpager">100dp</dimen>
 </resources>
