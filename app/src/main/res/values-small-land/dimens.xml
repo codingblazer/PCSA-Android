@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="splash_screen_imgsize">120dp</dimen>
+    <dimen name="button_width_poststaff">300dp</dimen>
 </resources>
