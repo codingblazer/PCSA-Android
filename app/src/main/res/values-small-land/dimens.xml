@@ -2,4 +2,7 @@
 <resources>
     <dimen name="splash_screen_imgsize">120dp</dimen>
     <dimen name="button_width_poststaff">300dp</dimen>
+    <dimen name="cirle_imageview_width"> 125dp</dimen>
+    <dimen name="circle_imageview_height">125dp</dimen>
+    <dimen name="menu_icon_width">100dp</dimen>
 </resources>
